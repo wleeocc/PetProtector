@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pet_list"
     android:layout_width="match_parent"
@@ -11,4 +12,29 @@
     tools:context="edu.orangecoastcollege.cs273.wlee.petprotector.PetListActivity"
     android:orientation="vertical">
 
+    <TextView
+        android:text="@string/enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/none"
+        android:id="@+id/petImageView"
+        android:clickable="true"
+        android:layout_gravity="center" />
+
+    <Button
+        android:text="@string/add_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="selectPetImage"
+        android:layout_gravity="center" />
 </LinearLayout>
